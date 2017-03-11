@@ -280,7 +280,7 @@ class AopClient {
 		$sysParams["notify_url"] = $request->getNotifyUrl();
 		$sysParams["return_url"] = $request->getReturnUrl();
 		$sysParams["charset"] = $this->postCharset;
-		var_dump($sysParams);exit();
+
 		//获取业务参数
 		$apiParams = $request->getApiParas();
 
@@ -345,8 +345,6 @@ class AopClient {
 				//$val = $this->characet($val, $this->postCharset);
 				$val = str_replace("'","&apos;",$val);
 				//$val = str_replace("\"","&quot;",$val);
-				var_dump($key);
-				var_dump($val);
 				$sHtml.= "<input type='hidden' name='".$key."' value='".$val."'/>";
 			}
         }
