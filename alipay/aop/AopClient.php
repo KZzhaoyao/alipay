@@ -84,6 +84,7 @@ class AopClient {
 		}
 
 		unset ($k, $v);
+		var_dump($stringToBeSigned);exit();
 		return $stringToBeSigned;
 	}
 
