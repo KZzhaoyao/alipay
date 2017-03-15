@@ -589,7 +589,11 @@ class AopClient {
 	function verify($data, $sign, $rsaPublicKeyFilePath, $signType = 'RSA') {
 
 		if($this->checkEmpty($this->alipayPublicKey)){
-
+			var_dump($data);
+			echo <br>;
+			var_dump($sign);
+			echo <br>;
+			var_dump($rsaPublicKeyFilePath);exit();
 			$pubKey= $this->alipayrsaPublicKey;
 			$res = "-----BEGIN PUBLIC KEY-----\n" .
 				wordwrap($pubKey, 64, "\n", true) .
