@@ -590,9 +590,9 @@ class AopClient {
 
 		if($this->checkEmpty($this->alipayPublicKey)){
 			var_dump($data);
-			echo <br>;
+			var_dump('===================');
 			var_dump($sign);
-			echo <br>;
+			var_dump('===================');
 			var_dump($rsaPublicKeyFilePath);exit();
 			$pubKey= $this->alipayrsaPublicKey;
 			$res = "-----BEGIN PUBLIC KEY-----\n" .
