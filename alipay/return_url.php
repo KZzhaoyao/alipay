@@ -16,6 +16,8 @@ require_once 'wappay/service/AlipayTradeService.php';
 
 $arr=$_GET;
 $alipaySevice = new AlipayTradeService($config); 
+var_dump($arr);
+var_dump($alipaySevice);exit();
 $result = $alipaySevice->check($arr);
 
 /* 实际验证过程建议商户添加以下校验。
