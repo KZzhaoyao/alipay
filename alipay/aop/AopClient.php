@@ -84,7 +84,6 @@ class AopClient {
 		}
 
 		unset ($k, $v);
-		var_dump($stringToBeSigned);exit();
 		return $stringToBeSigned;
 	}
 
@@ -591,10 +590,6 @@ class AopClient {
 
 		if($this->checkEmpty($this->alipayPublicKey)){
 			var_dump($data);
-			var_dump('===================');
-			var_dump($sign);
-			var_dump('===================');
-			var_dump($rsaPublicKeyFilePath);exit();
 			$pubKey= $this->alipayrsaPublicKey;
 			$res = "-----BEGIN PUBLIC KEY-----\n" .
 				wordwrap($pubKey, 64, "\n", true) .
